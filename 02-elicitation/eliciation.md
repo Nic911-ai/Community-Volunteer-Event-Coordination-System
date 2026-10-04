@@ -6,6 +6,7 @@
 - IT
 
 2. Stakeholder needs and concerns
+
 | Stakeholder | Needs | Concerns |
 |---|---|---|
 | Volunteer | Easy registration, event information, task information, notifications | Complexity, too many notification |
