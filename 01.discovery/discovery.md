@@ -15,7 +15,7 @@ Initial Discovery
 - Volunteers should be able to choose the events or task they are interested in.
 - Organisation will have someone responsible for managing the system.
 - The system will be used for community events rather than commercial events.
-4. Unknowns
+3. Unknowns
 - How many volunteers might use the system at the same time?
 - What types of community events will be supported?
 - Should volunteers be able to cancel?
@@ -29,13 +29,13 @@ Initial Discovery
 - Should volunteers be able to record their hours?
 - Are report required?
 - What happens if an event is cancelled?
-5. Stakeholders
+4. Stakeholders
 - Volunteers / look out for events, view task, register, manage availability
 - Event Organisers/ Create events and coordinate volunteers, Managers	Manage volunteers and oversee events,manage volunteers during events
 System Administrator	Manage users, permissions, and system configuration
 Community Members	Indirectly benefit from well-organised events
 IT/Support Staff	Maintain and support the system
-6. Goals
+5. Goals
 - Find suitable volunteer opportunities.
 - View upcoming events.
 - See event details.
@@ -59,8 +59,39 @@ IT/Support Staff	Maintain and support the system
 - Improve communication.
 - Reduce volunteer scheduling conflicts.
 - Make event planning more efficient.
-7. Scope
-8. Candidate Requirements
-9. Requirement Surgery
-10. Reflection
+6. Scope
+- Volunteer registration and login.
+- Volunteer profiles.
+- Event creation.
+- Event registration.
+- Volunteer availability.
+- Volunteer task assignment.
+- Event pasticipant lists.
+- Notification.
+- Event updates and cancellation.
+- Volunteer management.
+- Event management.
+- Role-based access.
+7. Candidate Requirements
+- Volunteers
+- The system shall allow volunteers to create account.
+- The system shall allow volunteers to log in and manage their profile.
+- The system shall allow volunteers to browse and register available events.
+- The system shall allow volunteers to provide their availability.
+- The system shall notify volunteers any changes for the events.
+- The system shall allow volunteers to withdraw from an event 2 weeks before the event.
+- Organisers
+- The system shall allow organisers to create community events.
+- The system shall allow organisers to cancel event.
+- The system shall allow organisers to create and specify time, date, location, description, and how many volunteers neede and role required for an event.
+
+8. Requirement Surgery
+- Who decides whether a change is important?
+- Should every change trigger a notification?
+- Should notification be sent by email, push-notification or in-system?
+- What happens if a volunteer does not read the notification?
+- Improve requirements:
+- The system shall notify registered volunteers when the date, time, location, assigned task, or cancellation status of an event changes.
+
+9. Reflection
 
