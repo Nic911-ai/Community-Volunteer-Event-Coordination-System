@@ -62,6 +62,39 @@ B. Event Organiser
 - Do you need reports showing registration and attendance?
 - What is the biggest problem with the current event management process?
 
-C. 
+C. Volunteer Coordinator
+- How do you currently collect volunteer availability?
+- How do you decide which volunteer should perform each tasl?
+- Should volunteers be able to select their preferred tasks?
+- Do same tasks requre particular skills or qualifications?
+- How should volunteer cancellations be handled?
+- What information do you need from the volunteers?
+- What information would help coordinate volunteers more efficiently?
+
+D.Event Supervisor
+- How do you currently check whether volunteers have arrived?
+- What information do you need about the volunteers assigned to your event?
+- Should you be able to view each volunteer's assigned tasks?
+- How would you like the attendace be recorded?
+- What happen if a voluntter does not show up?
+- Do you need to contact volunteers through the system or external system?
+- What information should be available to you during an event?
+
+E. IT Support
+- What technical requirements must the system meet?
+- What personal information should be store in the system?
+- Should each stakholders have diffrent access permissions?
+- How should user accounts be created, updated and disable?
+- What security measures are required?
+- How should the system handle errors or downtime?
+- How does backups and data recovery be done?
+- Who will maintain the system?
+
+7. Example Interview Notes
+8. 
+
+| Stakholder | Example Finding | Possible Implication |
+|---|---|---|
+| 
 
 
