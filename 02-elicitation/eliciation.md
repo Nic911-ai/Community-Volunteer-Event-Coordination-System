@@ -28,4 +28,40 @@
 | Should volunteers be able to record their volunteer hours? | Event Organiser/Volunteer Cordinator |
 | What happens when an event is canceeled?| Event Organiser/Volunteer Cordinator |
 
+4.Information Sources 
+
+| Infromation Source | What We Can Learn |
+|---|---|
+| Interview with volunteers | Registration error, event inormation needs, notification, last minute cancellation |
+| Interview with event organisers | How events are created and structure, how colunteers are assigned and how attendance should be managed |
+| Interview with volunteer coordinators | How is managed and collected, how tasks are assigned and how staff gaps are identified. |
+| Interview with event supervisors | How attendance is checked and how volunteer responsibilities are monitored. |
+| Interview with IT Support | Technical requirements, user access, security, backups and system maintenance. |
+| Event schedules | How does event dates, times, locations, and activities are recorded |
+
+6. Elicitation Questions
+A. Volunteer
+- How do you find about community volunteer events?
+- What information do you need before joing an event?
+- How would you like to register for an event?
+- Would you like to choose your own tasks?
+- Should you be allowed to cancel your registration?
+- How would you prefer to receive event reminders and updates?
+- Which notifications are useful and which would you feel unnecessary?
+- What would make you feel the system is difficult or frustrating to use?
+
+B. Event Organiser
+- How do you create and manage community events?
+- What information must be recorded when creating an event?
+- How do you decide how many volunteers are needed?
+- How do you assign volunteers to an event?
+- How do you handle last-minute cancellation from the volunteers?
+- What information do you need to know from the volunteer?
+- What should happen if an event is cancelled or changed?
+- What event reminders or notifications should be sent?
+- Do you need reports showing registration and attendance?
+- What is the biggest problem with the current event management process?
+
+C. 
+
 
