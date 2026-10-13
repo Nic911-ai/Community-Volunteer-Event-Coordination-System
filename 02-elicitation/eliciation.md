@@ -107,6 +107,39 @@ E. IT Support
 
 8. Candidate Requirements
 
-| Stakeholder Finding 
+| Stakeholder Finding | Identified Need | Candidate Reuirement | Validation Question |
+|---|---|---|---|
+| Volunteers want to see event information before and afrer signing up. | Access to event details. | The system shall allow volunteers to view event dats, times, locations, and desciprtions before registering. | Are any other detila required before a volunteer can register? |
+| Organisers need to keep track of coluteer registrations. | Centralised registration management. | The system shall allow authorised event organisers to view the list of volunteers registered for each event. | Which volunteer details should organisers be allowed to view? |
+|Coordinators need to know volunteer availability. | Availability management | The system shall allow volunteers to provide their availability for volunteer events. Should availability be recorded for individual dates, time periods or both. |
+| Coordinators need to assign volunteers to tasks. | Task assignment. | The system shall allow authorised volunteer coordinators to assign registered volunteer to specific tasks. | Can coordinators reassign volunteers after an assigment has been made? |
+| Supervisors need to know who attended an event. | Attendance tracking | They system shall allow authorised event supervisors to record volunteer attendance for an event. | Should attendance include only present/absent status, or also arrival and departure times? |
+| Volunteers need information about thier responsibilities. | Access to assigned task details. | The system shall allow volunteers to view their assigned task and responsibilities for an event . | What details should be displayed for each task? |
+| Volunteers need to receive importnat event updates. | Registration withdraw | The system shall allow registerd volunteers to withdraw from an event, subject to the organisation's cancellation rules. | What is the cancellation deadline? and what should happen after it is cacnel? |
+| Organisers need to manage cancellations. | Registration withdrawal management | The system shall allow registerd volunteers to withdraw from an event, subject to the organisation's cacellation rules. |
+| IT Support needs to protect system access. | User access control | The system shall restrict system fuctions according to each user's authorised access permissions. | What permissions should each stakholders have. |
+| Organisers neeed to identify events that short of volunteers. | Staffinf visibility. | The system shall display the number of registered volunteers for each event event. | Is the total number enough, or must the system also show unfilled tasks? |
+
+
+9. Problem -> Stakeholders -> Elicitation -> Analysis -> Requiremtns
+
+| Stage | Application to the Community Volunteer & Event Coordination System |
+|---|---|
+| Problem | Volunteer registration, availability, task assignment, and attendance may be managed using seperate tools, making coordination difficult. This is a problem statement to verify, not a confirmed finding. |
+| Stakeholders | Volunteer, Event Organiser, Volunteer Coordinator, Event Supervisor, and IT Support. |
+| Elicitation | Interview the five stakeholders, review existing forms and spreadsheets, and aboserve how an event is organised. |
+| Analysis | Identify repeated problem, clarify unknowns, resolve conflicting needs, and check which requirements are necessary. |
+| Requirements | Produce clear functional requiremnts and quality requirements that can be checked or tested. |
+
+
+10. Classifying Statements
+
+
+| Statement | Classification | Reason |
+|---|---|---|
+| Volunteers need clear information about event tasks. | Stakholder Need | It descibes what volunteers need. |
+| The system shall allow supervisors to record volunteer attendance. | Candidate Requirement |It describes a fuction the system may need to provide. |
+| The system should use a mobile application. | Solution Idea | It proposes a particular type of solution before confirming the need. |
+| All 
 
 
