@@ -91,10 +91,22 @@ E. IT Support
 - Who will maintain the system?
 
 7. Example Interview Notes
-8. 
+
 
 | Stakholder | Example Finding | Possible Implication |
 |---|---|---|
-| 
+| Volunteer | The volunteer finds out about events through messages and wants all important information | The system may need to display event details clearly. |
+| Volunteer | The volunteer wants to know their responsibilities before attending. | The system may need to display assigned tasks. |
+| Volunteer | The volunteer may be unavailable after registering. | The system may need a cancelation or withdrawal function. |
+| Event Organiser | The organiser uses spreadsheet to track registration | The system may need a centralised registation list |
+| Event Organiser | THe organiser has difficulty identifying events with too little volunteers | The system may need to display filled and unfilled position. |
+| Volunteer Coordinator | The coordinator needs to know volunteer availability before assigning tasks. | The system may need to record volunteer availability. |
+| Volunteer Coordinator | Some event taks may require specific skills. | The need to record skills from volunteers. |
+| Event Supervisor | The supervisor needs to know who has arrived and which tasks they are assigned. | The system may need attendance and task information. |
+| IT Support | Diffrent users may need diffrent level access. | THe system may need role based permissions. |
+
+8. Candidate Requirements
+
+| Stakeholder Finding 
 
 
