@@ -52,6 +52,13 @@
 | Check | Test event creation and task assignment separately using users with correct permissions. |
 
 
+4. Functional Requirements
+
+
+| ID | Requirement | Source | How could we verify it? |
+| --- | --- | --- | --- |
+| FR-01 | The system shall allow volunteers to view available community events, including each
+
 
 
 
