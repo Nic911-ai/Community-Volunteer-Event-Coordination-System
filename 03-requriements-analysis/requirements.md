@@ -57,7 +57,17 @@
 
 | ID | Requirement | Source | How could we verify it? |
 | --- | --- | --- | --- |
-| FR-01 | The system shall allow volunteers to view available community events, including each
+| FR-01 | The system shall allow volunteers to view available community events, including each event's date, time, location and desciprtion. | Proposed stakeholder need to confirm through volunteer interviews. | Display several sample events and check all required details. |
+| FR-02 | The system shall allow registerd volunteers to register for an available community event. | Proposed stakholder confirm through volunteer interviews. | Register test volunteer for an available event and check the registration is recorded. |
+| FR-03 | The system shall allow authorised volunteer coordinators to assign registerd volunteers to specific event tasks. | Proposed stakeholders coordinator interviews. | Assign a registered volunteer to ask and verify the assigment appears correctly. |
+| FR-04 | The system shall allow authorised event organisers to view list of volunteers registerd for each event. | Evvent Organiser | Check that the organiser can view the correct volunteer list for a selected event. |
+| FR-05 | The system shall allow volunteers to provide their availability for community events | Volunteer | Enter a volunteer availability and check the inormation is saved correctly. |
+| FR-06 | The system shall allow authorised event supervisors to record volunteer attendance for an event | Event Supervisor | Check test volunteer as present and confirm the attendance record is saved. |
+| FR-07 | The system shall allow volunteers to view tasks assigned them for an event | Volunteer | Assign a task volunteer and check the volunteer can view correct task. |
+| FR-08 | The system shall notify registerd volunteers when event they registerd is cancelled. | Volunteer,Event Organiser | Cancel a test event and check whether registerd volunteer recive the required notification. 
+| FR-09 | The system shall restrict access to system functions according to each user authorised permissions. | IT Support | Log in using diffrent accounts and check each accout can access with its authorised functions. |
+
+
 
 
 
