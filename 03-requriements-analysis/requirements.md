@@ -67,6 +67,9 @@
 | FR-08 | The system shall notify registerd volunteers when event they registerd is cancelled. | Volunteer,Event Organiser | Cancel a test event and check whether registerd volunteer recive the required notification. 
 | FR-09 | The system shall restrict access to system functions according to each user authorised permissions. | IT Support | Log in using diffrent accounts and check each accout can access with its authorised functions. |
 
+5. Reflection
+Interview representatives from all difrrent stakholder groups and review. 
+
 
 
 
