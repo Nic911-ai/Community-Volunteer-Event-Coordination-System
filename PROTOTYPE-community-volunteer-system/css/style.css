@@ -1,0 +1,80 @@
+/* ===== 1. Colour palette and base settings ===== */
+:root {
+  --blue: #12355b;      /* dark blue: header, headings, footer */
+  --green: #2e7d32;     /* green: main buttons and accents */
+  --green-dark: #1f5c23;
+  --white: #ffffff;
+  --grey: #f3f5f7;      /* light grey: page background */
+  --border: #d5dbe1;
+  --text: #1c2733;
+  --error: #b3261e;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; line-height: 1.6; color: var(--text); background: var(--grey); }
+h1, h2, h3 { color: var(--blue); line-height: 1.25; }
+a { color: var(--blue); }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 1rem; }
+main.container { padding-top: 1.5rem; padding-bottom: 2rem; }
+
+/* ===== 2. Header and navigation (same on every page) ===== */
+.site-header { background: var(--blue); color: var(--white); }
+.header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem; padding-top: 0.8rem; padding-bottom: 0.8rem; }
+.site-title { font-size: 1.15rem; font-weight: bold; color: var(--white); text-decoration: none; }
+.main-nav a { color: var(--white); text-decoration: none; margin-right: 1rem; padding: 0.2rem 0; border-bottom: 2px solid transparent; }
+.main-nav a:hover, .main-nav a.active { border-bottom-color: #8fd694; }
+
+/* ===== 3. Buttons and links styled as buttons ===== */
+.btn { display: inline-block; padding: 0.65rem 1.2rem; border: 2px solid var(--green); border-radius: 6px; background: var(--green); color: var(--white); font-size: 1rem; font-weight: bold; text-decoration: none; cursor: pointer; }
+.btn:hover { background: var(--green-dark); border-color: var(--green-dark); }
+.btn-secondary { background: var(--white); color: var(--blue); border-color: var(--blue); }
+.btn-secondary:hover { background: var(--grey); }
+.button-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; }
+
+/* ===== 4. Welcome banner, search and filters ===== */
+.hero { background: var(--white); border-left: 6px solid var(--green); border-radius: 8px; padding: 1.25rem 1.5rem; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.hero h1 { margin-top: 0; }
+.search-box { margin: 1.5rem 0 1rem; }
+.filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+.filter-chip { padding: 0.35rem 0.9rem; border: 1px solid var(--blue); border-radius: 999px; background: var(--white); color: var(--blue); font-size: 0.9rem; }
+
+/* ===== 5. Cards (events and general panels) ===== */
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+.card, .panel { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.card { display: flex; flex-direction: column; }
+.card h3 { margin-top: 0; }
+.card .btn { margin-top: auto; text-align: center; }
+.event-meta { list-style: none; padding: 0; margin: 0 0 0.75rem; font-size: 0.95rem; }
+.event-meta li { margin-bottom: 0.25rem; }
+.tag { display: inline-block; background: #e3f1e4; color: var(--green-dark); font-size: 0.8rem; font-weight: bold; padding: 0.15rem 0.6rem; border-radius: 999px; margin-bottom: 0.5rem; }
+.panel { margin-bottom: 1.25rem; }
+.panel h2 { margin-top: 0; font-size: 1.2rem; }
+
+/* ===== 6. Notes for requirements discussion ===== */
+.note { background: #fff8e1; border-left: 4px solid #b26a00; padding: 0.6rem 0.9rem; border-radius: 4px; font-size: 0.9rem; margin: 1rem 0; }
+
+/* ===== 7. Forms ===== */
+.form-field { margin-bottom: 1.1rem; }
+label { display: block; font-weight: bold; margin-bottom: 0.3rem; color: var(--blue); }
+.proposed { font-weight: normal; font-size: 0.85rem; color: #4a5560; }
+input, textarea { width: 100%; padding: 0.6rem; border: 1px solid #7b8794; border-radius: 6px; font-size: 1rem; font-family: inherit; background: var(--white); }
+input:focus, textarea:focus, a:focus, .btn:focus { outline: 3px solid #f0b429; outline-offset: 2px; }
+input[readonly] { background: var(--grey); }
+.field-error input { border: 2px solid var(--error); }
+.error-text { color: var(--error); font-size: 0.9rem; margin: 0.3rem 0 0; }
+.alert { background: #fdecea; border: 1px solid var(--error); color: #7a1712; padding: 0.8rem 1rem; border-radius: 6px; margin-bottom: 1.25rem; }
+
+/* ===== 8. Submitted page ===== */
+.centered { text-align: center; max-width: 640px; margin: 0 auto; }
+.success-icon { width: 72px; height: 72px; line-height: 72px; margin: 0 auto 1rem; border-radius: 50%; background: var(--green); color: var(--white); font-size: 2.2rem; font-weight: bold; }
+.centered .button-row { justify-content: center; }
+
+/* ===== 9. Footer (same on every page) ===== */
+.site-footer { background: var(--blue); color: var(--white); padding: 1.25rem 0; font-size: 0.9rem; }
+.site-footer p { margin: 0.2rem 0; }
+
+/* ===== 10. Small screens ===== */
+@media (max-width: 600px) {
+  .main-nav a { display: inline-block; margin-right: 0.8rem; }
+  .btn { width: 100%; text-align: center; }
+  .hero { padding: 1rem; }
+}
