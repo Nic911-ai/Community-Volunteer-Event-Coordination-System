@@ -1,0 +1,10 @@
+{% extends "base.html" %}{% block body %}<h2>{{ title }}</h2>{% if text %}<p>{{ text }}</p>{% endif %}
+{% if fields %}<form method="post" class="card">{% for f in fields %}<label>{{ f[1] }}</label>
+{% if f[2]=='select' %}<select name="{{ f[0] }}">{% for o in f[3] %}{% set v=o if o is string else o[0] %}<option value="{{ v }}" {{ 'selected' if f|length>4 and f[4]==v }}>{{ o if o is string else o[1] }}</option>{% endfor %}</select>
+{% elif f[2]=='textarea' %}<textarea name="{{ f[0] }}">{{ f[3] }}</textarea>
+{% else %}<input type="{{ f[2] }}" name="{{ f[0] }}" value="{{ f[3] if f|length>3 else '' }}">{% endif %}{% endfor %}
+<button>{{ button }}</button></form>{% endif %}
+{% if cols %}<div class="scroll"><table><tr>{% for k,l in cols %}<th>{{ l }}</th>{% endfor %}{% if rows and rows[0]._act %}<th>Actions</th>{% endif %}</tr>
+{% for r in rows %}<tr>{% for k,l in cols %}<td>{{ r[k] }}</td>{% endfor %}{% if r._act %}<td>{% for a in r._act %}
+{% if a|length>2 %}<a class="btn sm" href="{{ a[1] }}">{{ a[0] }}</a>{% else %}<form method="post" action="{{ a[1] }}" style="display:inline"><button class="sm">{{ a[0] }}</button></form>{% endif %}{% endfor %}</td>{% endif %}</tr>
+{% else %}<tr><td colspan="9">Nothing to show yet.</td></tr>{% endfor %}</table></div>{% endif %}{% endblock %}

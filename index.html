@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Events | Community Volunteer &amp; Event Coordination System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header and navigation: identical on every page -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-title" href="index.html">&#127807; Community Volunteer &amp; Event Coordination System</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Events</a>
+        <a href="event-details.html">Event Details</a>
+        <a href="register.html">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Welcome message -->
+    <section class="hero">
+      <h1>Find a Community Event to Volunteer At</h1>
+      <p>Welcome! This system helps volunteers discover community events, register to take part, and understand what happens after they register.</p>
+      <p class="note">Prototype notice: the events below are <strong>fictional samples</strong>, not real events.</p>
+    </section>
+
+    <!-- Search field: visual only (needs JavaScript or a backend to work) -->
+    <section class="search-box" aria-label="Search events">
+      <label for="event-search">Search events</label>
+      <input type="search" id="event-search" placeholder="e.g. park, food, tutoring">
+      <p class="note">Visual prototype only: this search box does not search anything yet. Working search would need JavaScript or a backend (candidate requirement).</p>
+    </section>
+
+    <!-- Category filters: visual only -->
+    <section aria-label="Event categories">
+      <div class="filters">
+        <span class="filter-chip">&#127795; Environment</span>
+        <span class="filter-chip">&#129309; Community Service</span>
+        <span class="filter-chip">&#128218; Education</span>
+        <span class="filter-chip">&#10084; Charity</span>
+      </div>
+      <p class="note">Visual only: these filters are labels and do not filter the events.</p>
+    </section>
+
+    <!-- Three fictional sample event cards -->
+    <section aria-label="Sample events">
+      <div class="card-grid">
+        <article class="card">
+          <span class="tag">Environment &middot; Sample</span>
+          <h3>Community Park Cleanup</h3>
+          <ul class="event-meta">
+            <li>&#128197; Sample date: Saturday, 15 March 2025</li>
+            <li>&#128205; Sample location: Riverside Park (fictional)</li>
+          </ul>
+          <p>Help tidy paths, collect litter, and keep the local park pleasant for everyone.</p>
+          <a class="btn" href="event-details.html">View Details</a>
+        </article>
+
+        <article class="card">
+          <span class="tag">Charity &middot; Sample</span>
+          <h3>Food Donation Drive</h3>
+          <ul class="event-meta">
+            <li>&#128197; Sample date: Sunday, 23 March 2025</li>
+            <li>&#128205; Sample location: Town Hall Hall A (fictional)</li>
+          </ul>
+          <p>Help sort and pack donated food items for local families.</p>
+          <a class="btn" href="event-details.html">View Details</a>
+        </article>
+
+        <article class="card">
+          <span class="tag">Education &middot; Sample</span>
+          <h3>Community Tutoring Programme</h3>
+          <ul class="event-meta">
+            <li>&#128197; Sample date: Wednesday, 26 March 2025</li>
+            <li>&#128205; Sample location: Community Library Room 2 (fictional)</li>
+          </ul>
+          <p>Support school students with homework and reading practice.</p>
+          <a class="btn" href="event-details.html">View Details</a>
+        </article>
+      </div>
+      <p class="note">Prototype limitation: all three "View Details" links open the same sample page (Community Park Cleanup) to keep the prototype to five screens.</p>
+    </section>
+  </main>
+
+  <!-- Footer: identical on every page -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Community Volunteer &amp; Event Coordination System &ndash; Requirements Engineering coursework prototype (Week 7).</p>
+      <p>All events and details shown are fictional samples. No real data is collected or stored.</p>
+    </div>
+  </footer>
+</body>
+</html>
