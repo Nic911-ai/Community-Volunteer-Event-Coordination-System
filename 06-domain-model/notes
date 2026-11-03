@@ -1,18 +1,50 @@
-1. Class Diagram
-Class diagram helps us to understand what important objects exist in the system. What information each object stores. How diffrent objects are connected. How many objects can be related to each other.
+Part H 
+Task H1 - Identify Candidate Domain Concepts
 
-2. Identify the main classes
-- Volunteer class - Represents who participates in comunity events.
-- Event class - Represents a community volunteering event.
-- Registration class - records a volunteer's registration for an event.
-- Task class - Represents a responsibility assigned to a volunteer.
 
-3. Identify the attributes
+| Candidate Concept | Class | Why Is It Relavant? |
+|---|---|---|
+| Volunteer | Volunteer | Volunteers register for community events and participate in assigned activities. |
+| Event | Event | Community events have information such as date, times, locations, and descriptions.
+| Registration | Registration | Record a volunteer's registration for an event. |
+| Task | Task | Represents a responsibility that a volunteer may be assigned during an event. |
 
-| Class | Attributes |
+Task H2 - Draw Two or THree IMportant Associations
+
+| Class1 | Relationship | Class 2 | Reason |
+|---|---|---|---|
+| Volunteer | makes | Registration | Volunteer register for events. |
+| Registration | is for | Event | Each registration relates to an event. |
+| Volunteer | is assigned to | Task | Volunteers may be assigned to specific event tasks. |
+
+Task H3 - Add Multiplicity
+
+| Association | Proposed Multiplicity | Explanation | Status |
+|---|---|---|---|
+| Volunteer - Registration | One Volunteer to 0..* Registrations | A volunteer may register for multiple events. | Confirm with stakeholder. |
+| Event - Registration | One Event to 0..* Registration | An event may have multiple registrations. | Confirm whether events can have zero registrations. |
+| Volunteer - Task | - | A volunteer may be assigned tasks, but the number of tasks and assignment have not been confirmed. | Unknown? check i with the Volunteer Coordinator. |
+
+
+Task H4 - One Question or Assumption Requiring Clarification 
+
+- Question : Can one volunteer register for multiple events, and can an event have multiple registrations?
+
+Stakholders to ask:
+- Volunteer
+- Event Organiser
+- Volunteer Coordinator
+
+Reflection - Week 4 - 6
+
+| Week List | Work Done |
 |---|---|
-| Volunteer | volunteerID, name, email, contactNumber |
-| Event | eventID, eventName, eventDate, location, description |
-| Registration | registrationID, registrationDate, status |
-| Task | taskID, taskName, taskDescription |
+| Week 4 | Use Case Diagram and notes |
+| Week 5 | Activity Diagram and notes |
+| Week 6 | Equipment Class Diagram |
+| Week 6 | Workshop Class Diagram |
+| Week 6 | Notes document |
+| Week 6 | Class Diagram |
+
+
 
