@@ -1,1 +1,20 @@
+Part A -Task A1
+
+A1. Proposed screen sequence
+1. Volunteers should be able to browse available community events before deciding which event to join.
+2. VOlunteers should be able to register for a selected community event by submitting their registration details.
+
+A2. Business that is still unknown 
+
+It has not yet confirmed whether a volunteer's registration is automatically accpted after submission whether the Event Organiser or Volunteer Coordinator must review and approve it.
+
+B - Plan User Journey
+
+| Screen | Proposed title | Purpose and case evidence |
+|---|---|---|
+| Browse Community Events | Display available events for volunteers to explore | Browse events |
+| Event Details | Display event name, date, time, location and desciption | View event details |
+| Volunteer Registration | Allow volunteers to enter their registration information | Register for event |
+| Missing Information | Show feedback when required information are missing | Candidate validation rule |
+| Registration Submitted | Acknowledge that the registration has been submitted | Submit registration |
 
