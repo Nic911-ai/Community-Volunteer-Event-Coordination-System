@@ -1,1 +1,18 @@
+1. Class Diagram
+Class diagram helps us to understand what important objects exist in the system. What information each object stores. How diffrent objects are connected. How many objects can be related to each other.
+
+2. Identify the main classes
+- Volunteer class - Represents who participates in comunity events.
+- Event class - Represents a community volunteering event.
+- Registration class - records a volunteer's registration for an event.
+- Task class - Represents a responsibility assigned to a volunteer.
+
+3. Identify the attributes
+
+| Class | Attributes |
+|---|---|
+| Volunteer | volunteerID, name, email, contactNumber |
+| Event | eventID, eventName, eventDate, location, description |
+| Registration | registrationID, registrationDate, status |
+| Task | taskID, taskName, taskDescription |
 
