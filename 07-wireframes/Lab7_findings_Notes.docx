@@ -23,17 +23,21 @@ C - Wireframe
 
 ## A volunteer opens the site and sees three fictional events. They open the Community Park Cleanup and read the date, location, and what volunteers do. They decide to join and fill in the form. If something is missing, they see a friendly “please check” message and go back. After submitting, they are told the registration was submitted and that they should check the event’s registration process, because approval is not assumed.
 
-C2. Screem 1 - Browse Event
+C1. Screen 1 - Browse Event
 - Reads the welcome message, scans the three event cards, clicks “View Details”.
 - Search box and category filters are visual only. Only the links work.
 
-C3. Screem 2 - Event details
+C2. Screen 2 - Event details
 - Reviews date, location, description, responsibilities, and illustrative skills or items before deciding.
 - Static text. Eligibility, deadline, capacity, and approval are shown as open questions. “Register” and “Back to Events” are plain links.
 
-C4. Screem 3 - Registration Form	
+C3. Screen 3 - Registration Form	
 - Fills in name, email, phone, and availability, then submits.
 - Real HTML form elements, but no data is stored or sent. Submit just opens screen 5.
+
+C4. Screen 4 - Incomplete Registration
+- Check which field are missing .
+- Volunteers may forget to fill in some requirements.
 
 C5. Screen 4 - Registration Submitted	
 - Gets acknowledgement and can return to the events or the event details. 
