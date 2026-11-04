@@ -18,3 +18,41 @@ B - Plan User Journey
 | Missing Information | Show feedback when required information are missing | Candidate validation rule |
 | Registration Submitted | Acknowledge that the registration has been submitted | Submit registration |
 
+C - Wireframe
+1. Storyboard
+
+## A volunteer opens the site and sees three fictional events. They open the Community Park Cleanup and read the date, location, and what volunteers do. They decide to join and fill in the form. If something is missing, they see a friendly “please check” message and go back. After submitting, they are told the registration was submitted and that they should check the event’s registration process, because approval is not assumed.
+
+C2. Screem 1 - Browse Event
+- Reads the welcome message, scans the three event cards, clicks “View Details”.
+- Search box and category filters are visual only. Only the links work.
+
+C3. Screem 2 - Event details
+- Reviews date, location, description, responsibilities, and illustrative skills or items before deciding.
+- Static text. Eligibility, deadline, capacity, and approval are shown as open questions. “Register” and “Back to Events” are plain links.
+
+C4. Screem 3 - Registration Form	
+- Fills in name, email, phone, and availability, then submits.
+- Real HTML form elements, but no data is stored or sent. Submit just opens screen 5.
+
+C5. Screen 4 - Registration Submitted	
+- Gets acknowledgement and can return to the events or the event details. 
+- Static page. It deliberately never says “approved” or “confirmed”.
+
+
+| Actor | Volunteer Journey | Future features |
+|---|---|---|
+| Event Organiser	| The registration form is where if volunteer are interest in any events would come from. They would need to see these registrations to assign volunteers and spot a shortage. | Creating events, viewing registrations, assigning volunteers |
+| Volunteer Coordinator |	The “availability or additional information” field hints at the availability data they need. Whether it is accurate enough is an open question.	| Volunteer overview, availability checks, conflict handling. |
+| Event Supervisor | The registration is the first record which who may attend. Whether it the attendance checking and task responsibilities is undecided.	| Assigned volunteer lists, attendance records. |
+| IT Support | The screens raise questions they must answer: where registrations are stored, how personal data is protected (the privacy placeholder on screen 3), what happens on errors (screen 4), and how a real system would stay reliable and secure.	| Account management, security, maintenance, data and monitoring |
+
+
+Open questions to raise with stakeholders
+1.	Does a registration need approval, and who approves it? (screen 5)
+2.	Which form fields are mandatory? (screens 3 and 4)
+3.	What are the eligibility rules, deadline, and capacity? (screen 2)
+4.	What notifications would the volunteer receive, without overloading them?
+5.	Who can see registrations, and how is personal data protected?
+
+
