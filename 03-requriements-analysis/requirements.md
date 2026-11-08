@@ -1,26 +1,50 @@
-1. Problem -> Stakeholders -> Elicitation -> Analysis -> Requiremtns
+1.  Requirement or not?
 
-| Stage | Application to the Community Volunteer & Event Coordination System |
-|---|---|
-| Problem | Volunteer registration, availability, task assignment, and attendance may be managed using seperate tools, making coordination difficult. This is a problem statement to verify, not a confirmed finding. |
-| Stakeholders | Volunteer, Event Organiser, Volunteer Coordinator, Event Supervisor, and IT Support. |
-| Elicitation | Interview the five stakeholders, review existing forms and spreadsheets, and aboserve how an event is organised. |
-| Analysis | Identify repeated problem, clarify unknowns, resolve conflicting needs, and check which requirements are necessary. |
-| Requirements | Produce clear functional requiremnts and quality requirements that can be checked or tested. |
-
-2. Classifying Statements
-
-| Statement | Classification | Reason |
+| Statement | What is it? | Why? |
 |---|---|---|
-| Volunteers need clear information about event tasks. | Stakholder Need | It descibes what volunteers need. |
-| The system shall allow supervisors to record volunteer attendance. | Candidate Requirement |It describes a fuction the system may need to provide. |
-| The system should use a mobile application. | Solution Idea | It proposes a particular type of solution before confirming the need. |
-| IT Support needs to manage user permissions. | Stakholder Need | It describes a technical and administrative need. |
-| The system shall send an email or message whenever an event is cancelled. | Candidate Requirements | It specifies a possible system behaviour that needs validation. |
+| “We need an online booking system.” | Proposed solution | Rather than showing the specific problem or fuction that needs to be explaied. |
+| “The technician needs to know what equipment is currently out.” | Need | Information that the technician needs to perform. |
+| “The system shall allow an authorised technician to record an equipment return.” | Requirement | A function the system must provide and identifies the authorised user. |
+| “We assume all staff have access to the college network.” | Assumption | Something believed to be true but has not yet been confirmed. |
+| “The system must comply with the college’s existing security policy.” | Constraint | Rule or restriction that the system must follow when being developed or operated. |
 
-3. Requirments Surgery
+2. Spot the Problems
 
-- The Sytem Should be User-Friendly
+1. The system shall be very easy to use
+- Problems: "very easy to use" is subjective because diffrent users may have different opinions. Is hard to measur and verufy whether the system is easy to use
+
+2. The system shall quickly show available equipment.
+- Problems: "Quickly" is ambiguous becasue there is no specific response time given how quick should it be?
+
+3. The system shall allows staff to book, cancel and approve bookings and send reminders.
+- Problems: It does not specify which kind of booking can be cancelled.
+
+3. Rewrite One Requirement
+
+- Original: The system shall quickly show available equipment.
+- Rewritten requirement(s): The system shall allow an authorised user to select an equipment item and a date to view its availability.
+- How Could you verify it? : Select an equipment item and a date, then check if the system displays the availability for the slected equipment and date.
+
+4. College Equipment Booking System Case Study
+- A technician says: “I need to know whether a camera is available before I promise it to a lecturer.”
+
+1. What problem or need is behind the statement?
+- How should the system display the camera availability, and should the techician be able to check availability for a soecific date?
+
+2. What would you ask the technician to learn more?
+- How should the system display the camera availability, and should the techician be able to check availability for a soecific date?
+
+3. Write ONE candidate functional requirement.
+- The system shall allow an authorised user to view camera availability for a selected date.
+
+4. Identify ONE quality/security/privacy/accessibility issue that might need investigation.
+- The system should ensure that only authorised users can access equipment booking information.
+
+5. How could the candidate requirement be verified?
+- Log in as an authorised user, select a camera and a date, and check whether the system displays its availability correctly.
+
+5. Exit Question
+- “A good requirement is useful because it clearly explains what the system needs to do and allows developers and stakeholders to understand, implement and verify the expected behaviour.”
 
 | Step | Answer |
 | --- | --- |
