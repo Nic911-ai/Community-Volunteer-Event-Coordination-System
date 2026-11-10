@@ -1,50 +1,191 @@
-Part H 
-Task H1 - Identify Candidate Domain Concepts
+1. Part A — Review your earlier work
 
 
-| Candidate Concept | Class | Why Is It Relavant? |
-|---|---|---|
-| Volunteer | Volunteer | Volunteers register for community events and participate in assigned activities. |
-| Event | Event | Community events have information such as date, times, locations, and descriptions.
-| Registration | Registration | Record a volunteer's registration for an event. |
-| Task | Task | Represents a responsibility that a volunteer may be assigned during an event. |
+| Model	| Main question	Your project example
+Use Case Diagram	Who uses the system, and what do they want to do?	Volunteer registers for an event.
+Activity Diagram	What happens during a process?	Volunteer browses an event, fills in a registration form and submits it.
+Class Diagram	What important concepts exist, and how are they related?	Volunteer, Event and Registration.
 
-Task H2 - Draw Two or THree IMportant Associations
+A1 — Identify supporting requirements
+Based on your earlier requirements work, we can use these functional requirements as the starting point:
+ID	Volunteer project requirement
+FR-01	The system shall allow volunteers to browse available community events.
+FR-02	The system shall allow volunteers to register for a community event.
+FR-03	The system shall allow volunteers to view their event registrations.
+FR-04	The system shall allow authorised Event Organisers to create and update community events.
+FR-05	The system shall allow Volunteer Coordinators to assign volunteers to event tasks.
+FR-06	The system shall allow Event Supervisors to record volunteer attendance.
+FR-07	The system shall provide volunteers with event update notifications.
 
-| Class1 | Relationship | Class 2 | Reason |
-|---|---|---|---|
-| Volunteer | makes | Registration | Volunteer register for events. |
-| Registration | is for | Event | Each registration relates to an event. |
-| Volunteer | is assigned to | Task | Volunteers may be assigned to specific event tasks. |
+These are based on the requirements we previously drafted. If your submitted Week 3 document uses different IDs or wording, use the submitted version instead.
 
-Task H3 - Add Multiplicity
+Answer the Part A questions:
 
-| Association | Proposed Multiplicity | Explanation | Status |
-|---|---|---|---|
-| Volunteer - Registration | One Volunteer to 0..* Registrations | A volunteer may register for multiple events. | Confirm with stakeholder. |
-| Event - Registration | One Event to 0..* Registration | An event may have multiple registrations. | Confirm whether events can have zero registrations. |
-| Volunteer - Task | - | A volunteer may be assigned tasks, but the number of tasks and assignment have not been confirmed. | Unknown? check i with the Volunteer Coordinator. |
+1. Which requirement tells us that Registration is an important concept?
 
+   FR-02: Volunteers can register for a community event.
 
-Task H4 - One Question or Assumption Requiring Clarification 
+2. Which requirement identifies attributes of Registration?
 
-- Question : Can one volunteer register for multiple events, and can an event have multiple registrations?
+   FR-02 tells us that registration takes place, but it does not specify all the information that must be stored. A registration date and status are possible attributes, but they need confirmation.
 
-Stakholders to ask:
-- Volunteer
-- Event Organiser
-- Volunteer Coordinator
+3. Which requirements indicate relationships involving staff roles?
+- FR-04: Event Organiser creates and updates Events.
+- FR-05: Volunteer Coordinator assigns Volunteers to Tasks.
+- FR-06: Event Supervisor records Attendance.
+Part B — Identify domain concepts
+B1 — Find candidate concepts
+Look at the important nouns in the requirements.
+Candidate	Class, attribute or action?	Supporting requirement
+Volunteer	Class	FR-01, FR-02, FR-03
+Registration	Class	FR-02, FR-03
+Event	Class	FR-01, FR-02, FR-04
+Event Organiser	Class / stakeholder role	FR-04
+Event name	Attribute	Suggested by FR-01 and FR-04; confirm
+Registration date	Attribute	Not explicitly confirmed by FR-02
+Browse	Action	FR-01
+Register	Action	FR-02
+Create event	Action	FR-04
+Assign volunteer	Action	FR-05
+Record attendance	Action	FR-06
 
-Reflection - Week 4 - 6
+Remember: A class represents an important thing in the system. An action describes something a user or system does. For example, Register is an action, while Registration is a class.
+B2 — Select the four main domain classes
+For your initial Volunteer Event Domain Model, I recommend these four:
+Class	Why is it relevant?
+Volunteer	Represents a person who participates in community events.
+Event	Represents a community activity that volunteers can join.
+Registration	Records a volunteer's registration for an event.
+Event Organiser	Represents the person responsible for creating and updating events.
 
-| Week List | Work Done |
-|---|---|
-| Week 4 | Use Case Diagram and notes |
-| Week 5 | Activity Diagram and notes |
-| Week 6 | Equipment Class Diagram |
-| Week 6 | Workshop Class Diagram |
-| Week 6 | Notes document |
-| Week 6 | Class Diagram |
+Why is Registration important?
 
+Imagine John registers for a Beach Clean-up event. The system needs to represent the connection between John and that particular event. The Registration class represents that connection.
+B3 — Identify uncertainty
+One useful candidate attribute is registrationStatus.
+
+Possible values might include:
+- Submitted
+- Approved
+- Rejected
+- Cancelled
+However, we have not confirmed the actual registration approval process.
+Unconfirmed detail	Who should confirm it?	Question
+Registration status	Event Organiser / Volunteer Coordinator	Does a submitted registration require approval?
+Volunteer contact number	Volunteer / Event Organiser	Is a contact number required during registration?
+Event capacity	Event Organiser	Is there a maximum number of volunteers per event?
+Registration date	Volunteer Coordinator	Should the system record when each volunteer registers?
+
+D1 — Identify the associations
+An association is simply a relationship between two classes.
+
+For your project, we can identify three important relationships:
+Class 1	Relationship	Class 2
+Volunteer	makes	Registration
+Registration	is for	Event
+Event Organiser	creates / manages	Event
+
+Read them aloud:
+1. A Volunteer makes a Registration.
+2. A Registration is for an Event.
+3. An Event Organiser creates or manages an Event.
+
+E1 — Identify what your requirements confirm
+Your current requirements confirm that volunteers can register for events, but they do not fully specify every relationship rule.
+Association	What is known?	What needs clarification?
+Volunteer — Registration	Volunteers can register for events.	Can a volunteer have multiple registrations? Can a registration belong to exactly one volunteer?
+Registration — Event	A registration is for a community event.	Can one event have multiple registrations? Can a registration ever cover multiple events?
+Event Organiser — Event	Organisers create and update events.	Can several organisers manage one event? Can one organiser manage multiple events?
+
+The project scenario mentions volunteers participating in multiple events. This supports the idea of multiple registrations per volunteer, but the exact registration relationship rules should still be confirmed.
+E2 — What multiplicities can you add?
+For the initial diagram, I recommend:
+- Volunteer to Registration: show the association, but leave unresolved ends unlabelled.
+- Registration to Event: show the association, but leave unresolved ends unlabelled.
+- Event Organiser to Event: show the association, but leave unresolved ends unlabelled.
+Do not put ? as a UML multiplicity. Unlabelled ends are acceptable here because this is explicitly a provisional diagram.
+E3 — Open questions
+Add a note beside your diagram titled OPEN QUESTIONS.
+
+You can use these questions:
+1. Can one volunteer register for multiple community events?
+2. Does each registration belong to exactly one volunteer and one event?
+3. Can an event have multiple Event Organisers?
+4. Can an Event Organiser manage multiple events?
+5. Does a volunteer's registration need approval before participation is confirmed?
+These questions should be asked of the Volunteer Coordinator, Event Organisers and Volunteers, depending on the topic.
+
+Part F — Review your Class Diagram
+F1 — Requirements-to-model check
+Requirement	Where is it represented?	Fully represented?
+FR-01 Browse available events	Event class	Partially
+FR-02 Register for an event	Volunteer, Registration and Event	Partially
+FR-03 View registrations	Registration class	Partially
+FR-04 Create and update events	Event Organiser and Event	Yes, at a conceptual level
+FR-05 Assign volunteers to tasks	Not represented in the four-class diagram	Needs improvement
+FR-06 Record volunteer attendance	Not represented in the four-class diagram	Needs improvement
+FR-07 Provide event notifications	Not represented in the four-class diagram	Needs improvement
+
+Why are some only partially represented?
+
+A Class Diagram represents the important concepts and their relationships. It does not automatically show every action or workflow. For example, FR-01's browsing action belongs in your Use Case and Activity Diagrams; the Event class represents the event information being browsed.
+F2 — Compare your previous models
+Use these observations in your notes:
+1. The Use Case Diagram shows Volunteers registering for community events. The Class Diagram represents this through Volunteer, Registration and Event.
+2. The Activity Diagram shows the volunteer completing a registration process. The Class Diagram represents the information involved in that process.
+3. The current Class Diagram does not yet include Task Assignment or Attendance, even though these are important in the requirements.
+4. The approval process for registrations is still unclear and should be confirmed with the Event Organiser or Volunteer Coordinator.
+One observation to record:
+
+The Class Diagram represents the main volunteer registration process, but additional classes may be required to represent task assignments and attendance management.
+
+Part H — Apply Class Diagrams to your project
+Now return to your Community Volunteer & Event Coordination System.
+H1 — Identify four candidate domain concepts
+Candidate class	Description
+Volunteer	A person who participates in community events.
+Event	A community activity organised for volunteers.
+Registration	Records a volunteer's registration for an event.
+Task Assignment	Records which volunteer is assigned to which task.
+
+I recommend using these four classes for a broader initial project model because Task Assignment is important to your coordination requirements.
+
+H3 — Add at least one multiplicity
+Your existing project information indicates that volunteers may participate in multiple events.
+
+This supports a candidate relationship where one Volunteer can have multiple Registration records.
+
+However, to complete both ends of the relationship, ask:
+- Can a volunteer have zero registrations?
+- Does every Registration belong to exactly one Volunteer?
+You should confirm these details before adding both multiplicities to the final diagram.
+H4 — Write one question or assumption requiring clarification
+Question for the Volunteer Coordinator:
+
+"Can one volunteer be assigned to multiple tasks within the same community event, and can one task be assigned to multiple volunteers?"
+
+This question helps determine the relationship between Volunteer, Task and Task Assignment.
+
+## Week 6 Reflection — Conceptual Class Diagrams
+
+**1. What is the difference between a Use Case Diagram, Activity Diagram and Class Diagram?**
+
+A Use Case Diagram shows who interacts with the system and what they want to accomplish. An Activity Diagram shows the steps involved in a process. A Class Diagram shows the important concepts in the system, their attributes and how they are related.
+
+**2. Why is Registration an important class in my Volunteer Event Coordination System?**
+
+Registration is important because it records the connection between a volunteer and a community event. It helps the system keep track of which events a volunteer has registered for.
+
+**3. What was difficult when identifying relationships and multiplicities?**
+
+The difficult part was deciding how many volunteers can register for an event and how many events a volunteer can join. Some of these details are not clearly stated in my current requirements, so I need to ask the relevant stakeholders instead of making assumptions.
+
+**4. What information needs further clarification from stakeholders?**
+
+I need to confirm whether volunteer registrations require approval, whether events have a maximum volunteer capacity, and whether one volunteer can be assigned to multiple tasks. I also need to understand how attendance will be recorded.
+
+**5. How will the Class Diagram help my project?**
+
+The Class Diagram helps me understand the important information that the Community Volunteer & Event Coordination System needs to manage. It also helps me identify missing requirements and relationships before moving on to the system design.
 
 
