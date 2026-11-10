@@ -1,0 +1,51 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="NCvAKkK9cetBplBH_lnq">
+    <mxGraphModel dx="1079" dy="723" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-hKu_vo7Vm0Gjc6mV2X0-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="310" width="860" x="80" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="-hKu_vo7Vm0Gjc6mV2X0-2" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Volunteer" vertex="1">
+          <mxGeometry height="120" width="160" x="130" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="-hKu_vo7Vm0Gjc6mV2X0-3" parent="-hKu_vo7Vm0Gjc6mV2X0-2" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+volunteerId&lt;br&gt;+name&lt;br&gt;+email" vertex="1">
+          <mxGeometry height="70" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-hKu_vo7Vm0Gjc6mV2X0-5" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Task Assignment" vertex="1">
+          <mxGeometry height="120" width="160" x="400" y="330" as="geometry">
+            <mxRectangle height="50" width="150" x="340" y="320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-hKu_vo7Vm0Gjc6mV2X0-6" parent="-hKu_vo7Vm0Gjc6mV2X0-5" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+assignmentId&lt;br&gt;+assigmentDate&lt;br&gt;+assignmentStatus" vertex="1">
+          <mxGeometry height="70" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-hKu_vo7Vm0Gjc6mV2X0-8" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Task&amp;nbsp;" vertex="1">
+          <mxGeometry height="120" width="160" x="690" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="-hKu_vo7Vm0Gjc6mV2X0-9" parent="-hKu_vo7Vm0Gjc6mV2X0-8" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+taskID&lt;br&gt;+taskName&lt;br&gt;+desciption" vertex="1">
+          <mxGeometry height="70" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-hKu_vo7Vm0Gjc6mV2X0-11" edge="1" parent="1" source="-hKu_vo7Vm0Gjc6mV2X0-5" style="endArrow=none;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;curved=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="-hKu_vo7Vm0Gjc6mV2X0-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="520" as="sourcePoint" />
+            <mxPoint x="330" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-hKu_vo7Vm0Gjc6mV2X0-12" connectable="0" parent="-hKu_vo7Vm0Gjc6mV2X0-11" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" value="1" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-hKu_vo7Vm0Gjc6mV2X0-13" edge="1" parent="1" source="-hKu_vo7Vm0Gjc6mV2X0-5" style="endArrow=none;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="-hKu_vo7Vm0Gjc6mV2X0-8" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="300" as="sourcePoint" />
+            <mxPoint x="560" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-hKu_vo7Vm0Gjc6mV2X0-14" connectable="0" parent="-hKu_vo7Vm0Gjc6mV2X0-13" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.9988" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
