@@ -1,3 +1,0 @@
-{% extends "base.html" %}{% block body %}<h2>Upcoming Community Events</h2>
-<form class="card inline"><input name="s" placeholder="Search title" value="{{ request.args.s }}"><input name="category" placeholder="Category" value="{{ request.args.category }}"><input name="location" placeholder="Location" value="{{ request.args.location }}"><input type="date" name="date"><button>Filter</button></form>
-<div class="grid">{% for e in events %}<div class="card"><h3>{{ e.title }}</h3><p>{{ e.category }} | {{ e.location }}<br>{{ e.event_date }}</p><a class="btn" href="{{ url_for('event', eid=e.id) }}">Details</a></div>{% else %}<p>No events match.</p>{% endfor %}</div>{% endblock %}
