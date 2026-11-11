@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% block body %}<h2>{{ e.title }}</h2><div class="card"><p>{{ e.description }}</p>
+<p><b>Date:</b> {{ e.event_date }} {{ start }}-{{ end }}<br><b>Location:</b> {{ e.location }}<br><b>Capacity:</b> {{ e.capacity or 'Unlimited' }} | <b>Status:</b> {{ e.status }}</p>
+{% if mine %}<p>Your registration: <span class="tag">{{ mine.status }}</span></p>
+{% elif session.role=='volunteer' and e.status=='open' %}<form method="post" action="{{ url_for('join', eid=e.id) }}"><button>Register</button></form>
+{% elif not session.uid %}<a class="btn" href="{{ url_for('login') }}">Log in to register</a>{% endif %}</div>{% endblock %}

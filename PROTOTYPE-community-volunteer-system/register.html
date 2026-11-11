@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Community Volunteer &amp; Event Coordination System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-title" href="index.html">&#127807; Community Volunteer &amp; Event Coordination System</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Events</a>
+        <a href="event-details.html">Event Details</a>
+        <a href="register.html" class="active">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Register for Community Event</h1>
+    <p><strong>Selected event:</strong> Community Park Cleanup (fictional sample event)</p>
+
+    
+    <form class="panel" action="registration-submitted.html" method="get">
+      <div class="form-field">
+        <label for="full-name">Full name <span class="proposed">(proposed required)</span></label>
+        <input type="text" id="full-name" placeholder="Example: Alex Sample">
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email address <span class="proposed">(proposed required)</span></label>
+        <input type="email" id="email" placeholder="Example: name@example.com">
+      </div>
+
+      <div class="form-field">
+        <label for="phone">Contact number <span class="proposed">(proposed required)</span></label>
+        <input type="tel" id="phone" placeholder="Example: 000 000 0000">
+      </div>
+
+      <div class="form-field">
+        <label for="event">Selected event</label>
+        <input type="text" id="event" value="Community Park Cleanup (sample)" readonly>
+      </div>
+
+      <div class="form-field">
+        <label for="availability">Availability or additional information <span class="proposed">(optional)</span></label>
+        <textarea id="availability" rows="4" placeholder="Example: I can stay for the whole morning."></textarea>
+      </div>
+
+      <p class="note">Privacy notice placeholder: the organisation's real privacy notice and data-handling rules are yet to be defined.</p>
+
+      <div class="button-row">
+        <a class="btn btn-secondary" href="event-details.html">Back</a>
+        <button class="btn" type="submit">Submit Registration</button>
+      </div>
+    </form>
+
+    <p>Want to see an example of an incomplete form? <a href="registration-error.html">View the incomplete registration example</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Community Volunteer &amp; Event Coordination System &ndash; Requirements Engineering coursework prototype.</p>
+      
+    </div>
+  </footer>
+</body>
+</html>

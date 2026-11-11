@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Your Registration | Community Volunteer &amp; Event Coordination System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-title" href="index.html">&#127807; Community Volunteer &amp; Event Coordination System</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Events</a>
+        <a href="event-details.html">Event Details</a>
+        <a href="register.html" class="active">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Please Check Your Registration</h1>
+
+    <!-- Friendly example message -->
+    <div class="alert" role="alert">
+      Some information may be missing. Please review your registration details.
+    </div>
+
+    <!-- Static example of a field needing attention (not a working form) -->
+    <section class="panel" aria-label="Example of a field that needs attention">
+      <div class="form-field field-error">
+        <label for="email-example">Email address</label>
+        <input type="email" id="email-example" aria-invalid="true" aria-describedby="email-msg" placeholder="Example: name@example.com">
+        <p class="error-text" id="email-msg">&#9888; This field needs attention. Please enter your email address.</p>
+      </div>
+      <div class="button-row">
+        <a class="btn" href="register.html">Return to Registration Form</a>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <!-- Footer: identical on every page -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Community Volunteer &amp; Event Coordination System &ndash; Requirements Engineering coursework prototype.</p>
+    </div>
+  </footer>
+</body>
+</html>
